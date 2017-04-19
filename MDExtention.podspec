@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MDExtention"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "model 自动存到数据库，从数据库自动改获取model "
 
   # This description is used to generate tags and improve search results.
