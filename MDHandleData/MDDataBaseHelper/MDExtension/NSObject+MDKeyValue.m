@@ -9,6 +9,7 @@
 #import "NSObject+MDKeyValue.h"
 #import "NSObject+MDMember.h"
 #import "MDDBHelper.h"
+#import <FMDB.h>
 @implementation NSObject (MDKeyValue)
 
 #pragma --mark 创建数据库表
