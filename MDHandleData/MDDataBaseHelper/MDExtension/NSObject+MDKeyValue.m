@@ -122,11 +122,10 @@
 }
 // private 返回某一列的数据
 -(NSArray *)fMSetColumnArray:(FMResultSet *)fmset{
-    FMStatement *statement = fmset.statement;
-    NSInteger columnCount = sqlite3_column_count(statement.statement);
+    NSInteger columnCount = fmset.columnCount;
     NSMutableArray *columnArray = [NSMutableArray array];
-    for (NSInteger columnIdx = 0; columnIdx < columnCount; columnIdx++) {
-        NSString *columnName = [NSString stringWithUTF8String:sqlite3_column_name(statement.statement, (int)columnIdx)];
+    for (int columnIdx = 0; columnIdx < columnCount; columnIdx++) {
+        NSString *columnName = [fmset columnNameForIndex:columnIdx];
         [columnArray addObject:columnName];
     }
     return columnArray;
