@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+MJKeyValue.h"
-@interface MDTextModel : NSObject<MJKeyValue>
+#import "MDHead.h"
+@interface MDTextModel : NSObject<MDKeyValue>
 
 @property (nonatomic, copy)NSString *name;
 //@property (nonatomic, assign)NSInteger num;

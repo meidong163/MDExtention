@@ -8,8 +8,6 @@
 
 #import "MDInsertDataVC.h"
 #import "Model.h"
-#import "NSObject+Property.h"
-#import "DbHelper.h"
 #import "SDWebImageManager.h"
 #import "MDHead.h"
 #import "MDModel.h"
