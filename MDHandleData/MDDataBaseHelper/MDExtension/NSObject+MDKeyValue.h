@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <sqlite3.h>
 /**
  *  KeyValue协议
  */

@@ -13,6 +13,7 @@
 		563480521E8F5D1C0054B84F /* MDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 563480511E8F5D1C0054B84F /* MDMethod.m */; };
 		563480551E8F5D2A0054B84F /* MDTypeEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 563480541E8F5D2A0054B84F /* MDTypeEncoding.m */; };
 		563480751E8F617B0054B84F /* MDTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 563480741E8F617B0054B84F /* MDTextModel.m */; };
+		563539451EA70BDE007D757B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 563539441EA70BDE007D757B /* libsqlite3.tbd */; };
 		5650A19D1E8CAB1F004115B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5650A19C1E8CAB1F004115B9 /* main.m */; };
 		5650A1A01E8CAB1F004115B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5650A19F1E8CAB1F004115B9 /* AppDelegate.m */; };
 		5650A1A31E8CAB1F004115B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5650A1A21E8CAB1F004115B9 /* ViewController.m */; };
@@ -45,6 +46,7 @@
 		563480541E8F5D2A0054B84F /* MDTypeEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTypeEncoding.m; sourceTree = "<group>"; };
 		563480731E8F617B0054B84F /* MDTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTextModel.h; sourceTree = "<group>"; };
 		563480741E8F617B0054B84F /* MDTextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTextModel.m; sourceTree = "<group>"; };
+		563539441EA70BDE007D757B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		5650A1981E8CAB1F004115B9 /* MDHandleData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDHandleData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5650A19C1E8CAB1F004115B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5650A19E1E8CAB1F004115B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563539451EA70BDE007D757B /* libsqlite3.tbd in Frameworks */,
 				8355BA74113D15F7D3DA12D1 /* libPods-MDHandleData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +183,7 @@
 		884533F4C54B1EB3A5B27BE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				563539441EA70BDE007D757B /* libsqlite3.tbd */,
 				03AFC9B3E9E2C58F096477AB /* libPods-MDHandleData.a */,
 			);
 			name = Frameworks;
@@ -448,6 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MDHandleData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = meidong.MDHandleData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -460,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MDHandleData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = meidong.MDHandleData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

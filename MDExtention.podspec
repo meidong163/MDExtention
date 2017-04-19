@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MDExtention"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "model 自动存到数据库，从数据库自动改获取model "
 
   # This description is used to generate tags and improve search results.
@@ -62,11 +62,11 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   s.platform     = :ios
+   s.platform     = :ios, "9.0"
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+   s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -133,4 +133,5 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
     s.dependency "FMDB", "~> 2.6.2"
+    s.dependency "SDWebImage"
 end 
