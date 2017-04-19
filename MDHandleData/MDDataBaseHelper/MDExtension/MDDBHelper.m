@@ -7,7 +7,8 @@
 //
 
 #import "MDDBHelper.h"
-
+#import "FMDatabase.h"
+#import "FMDatabaseQueue.h"
 @implementation MDDBHelper
 +(MDDBHelper *)instance{
     static MDDBHelper *db ;

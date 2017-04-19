@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FMDatabase.h"
-#import "FMDatabaseQueue.h"
+@class FMDatabase;
+@class FMDatabaseQueue;
 @interface MDDBHelper : NSObject
 {
     FMDatabase* _db;
